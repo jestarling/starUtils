@@ -48,17 +48,19 @@ setUpProject <- function(folderStyle="JenniferStarling",
      
      ## JenniferStarling folder style.
      
-     foldersToAdd <- c("Data", "DataRaw", "FromCollaborator",
-                       "Output", "Output/Figs", "Output/Cache",
-                       "R", "R/Cache", "References", "Reports",
-                       "Paper")
+     c("fromCollaborator", "data", "code", "figs",
+       "results", "prose", "rmd", "web")
+     
+     foldersToAdd <- c('Data','DataRaw','FromCollaborator',
+                       'R','R/Cache','R/Output','R/Figs','R/Reports',
+                       'Paper','Reference','Notes','ProjectInfo')
      
      projectInfo$folderStyle <- folderStyle
-     projectInfo$figureFolder <- "Output/Figs"
-     projectInfo$reportsFolder <- "Reports"
+     projectInfo$figureFolder <- "R/Figs"
+     projectInfo$reportsFolder <- "R/Reports"
      projectInfo$rawDataFolder <- "DataRaw"
      projectInfo$processedDataFolder <- "Data"
-     projectInfo$outputFolder <- "Output"
+     projectInfo$outputFolder <- "R/Output"
      
   }
   
