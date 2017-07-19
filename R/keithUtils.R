@@ -7,5 +7,5 @@
 #' examples).
 #'
 #' @docType package
-#' @name keithUtils
+#' @name starUtils
 NULL

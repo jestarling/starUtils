@@ -1,4 +1,4 @@
-#' Finds the root dir of a project made with keithUtils
+#' Finds the root dir of a project made with starUtils
 #'
 #' @return the root dir, defined as a folder containing
 #'     ".projectInfo.RData". Throws an error if no root

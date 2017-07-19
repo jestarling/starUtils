@@ -59,7 +59,7 @@ newMdaccReport <- function(reportFilename, reportPrefix="default"){
               reportName)
   rmarkdown::draft(file = fullReportPath,
                    template = "report",
-                   package = "keithUtils",
+                   package = "starUtils",
                    create_dir = TRUE,
                    edit = FALSE)
 

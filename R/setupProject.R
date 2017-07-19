@@ -6,8 +6,8 @@
 #'
 #' @param folderStyle character string naming the person
 #'     whose file structure I'm using as a template.
-#'     Default is "KeithBaggerly"; other currently allowed
-#'     variants are "JennyBryan", and "KarlBroman".
+#'     Default is "JenniferStarling"; other currently allowed
+#'     variants are "KeithBaggerly", JennyBryan", and "KarlBroman".
 #' @param includeProjectDescription logical - should a
 #'     skeleton project description file be included at
 #'     the top level of the project hierarchy? Defaults
@@ -15,9 +15,9 @@
 #' @return invisible if all of the folders were successfully
 #'     created.
 #' @examples
-#' setupProject("KeithBaggerly")
+#' setupProject("JenniferStarling")
 #' @export
-setUpProject <- function(folderStyle="KeithBaggerly",
+setUpProject <- function(folderStyle="JenniferStarling",
                          includeProjectDescription=TRUE){
 
   ## identify project root directory
@@ -43,6 +43,26 @@ setUpProject <- function(folderStyle="KeithBaggerly",
       "processedDataFolder",
       "outputFolder")
 
+  # Starling folder style.
+  if(folderStyle=="JenniferStarling"){
+     
+     ## JenniferStarling folder style.
+     
+     foldersToAdd <- c("Data", "DataRaw", "FromCollaborator",
+                       "Output", "Output/Figs", "Output/Cache",
+                       "R", "R/Cache", "References", "Reports",
+                       "Paper")
+     
+     projectInfo$folderStyle <- folderStyle
+     projectInfo$figureFolder <- "Output/Figs"
+     projectInfo$reportsFolder <- "Reports"
+     projectInfo$rawDataFolder <- "DataRaw"
+     projectInfo$processedDataFolder <- "Data"
+     projectInfo$outputFolder <- "Output"
+     
+  }
+  
+  # Keith Baggerly folder style.
   if(folderStyle=="KeithBaggerly"){
     foldersToAdd <-
       c("Data", "ProcessedData", "Figures", "Reports", "Output")
@@ -55,6 +75,7 @@ setUpProject <- function(folderStyle="KeithBaggerly",
     projectInfo$outputFolder <- "Output"
   }
 
+   #Jenny Bryan folder style.
   if(folderStyle=="JennyBryan"){
 
     ## Taken from
@@ -74,6 +95,7 @@ setUpProject <- function(folderStyle="KeithBaggerly",
 
   }
 
+  #Karl Broman folder style.
   if(folderStyle=="KarlBroman"){
 
     ## Taken from

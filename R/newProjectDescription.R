@@ -17,7 +17,7 @@ newProjectDescription <- function(){
 
   rmarkdown::draft(file = "projectDescription.Rmd",
                    template = "projectDescription",
-                   package = "keithUtils",
+                   package = "starUtils",
                    create_dir = FALSE,
                    edit = FALSE)
 
