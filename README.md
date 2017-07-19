@@ -1,4 +1,4 @@
-# keithUtils
+# starUtils
 
 The goal of starUtils is to collect various procedures and scripts than make my life easier. First among these are scripts which make it easier to implement consistent folder and file structures amongst working projects. 
 
@@ -7,8 +7,8 @@ The goal of starUtils is to collect various procedures and scripts than make my 
 This is a basic example which shows you how to solve a common problem:
 
 ```R
-library(keithUtils) ## typically at the start of an rstudio project
-setUpProject() ## adds folders I use, and a template projectDescription
+library(starUtils) ## typically at the start of an rstudio project
+setUpProject("JenniferStarling",projectFileDescription='ProjectInfo/') ## adds folders I use, and a template projectDescription within the specified folder.
 newMdaccReport("basicReport") 
 ## loads a new template report to Reports as follows:
 ## Reports/r01_basicReport/r01_basicReport.Rmd
