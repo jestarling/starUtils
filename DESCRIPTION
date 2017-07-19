@@ -3,7 +3,7 @@ Type: Package
 Title: Tools for Automating Project and Report Assembly
 Version: 0.1.0
 Author: Jennifer Starling
-Maintainer: Jennifer Starling <jennstarling@gmail.com>
+Maintainer: Jennifer Starling <jstarling@utexas.edu>
 Description: A collection of scripts and functions I've found
     useful, including tools for project setup, report templates,
     and image examples.  Credit: Based on original package keithUtils, by

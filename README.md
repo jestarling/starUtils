@@ -1,6 +1,6 @@
 # keithUtils
 
-The goal of keithUtils is to collect various procedures and scripts than make my life easier. First among these are scripts which make it easier to implement consistent folder and file structures amongst working projects. 
+The goal of starUtils is to collect various procedures and scripts than make my life easier. First among these are scripts which make it easier to implement consistent folder and file structures amongst working projects. 
 
 ## Example
 

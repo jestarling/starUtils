@@ -46,7 +46,7 @@ setUpProject <- function(folderStyle="JenniferStarling",
   # Starling folder style.
   if(folderStyle=="JenniferStarling"){
      
-     ## JenniferStarling folder style.
+     ## Jennifer Starling folder style.
      
      c("fromCollaborator", "data", "code", "figs",
        "results", "prose", "rmd", "web")

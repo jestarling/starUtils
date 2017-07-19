@@ -24,14 +24,3 @@ newProjectDescription <- function(folder=NULL){
                    edit = FALSE)
 
 }
-
-# ORIGINAL FUNCTION:
-# newProjectDescription <- function(){
-#    
-#    rmarkdown::draft(file = "projectDescription.Rmd",
-#                     template = "projectDescription",
-#                     package = "starUtils",
-#                     create_dir = FALSE,
-#                     edit = FALSE)
-#    
-# }
