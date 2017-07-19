@@ -4,3 +4,6 @@
 .Ruserdata
 
 starUtils.Rproj
+
+^.*\.Rproj$
+^\.Rproj\.user$
