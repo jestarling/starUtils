@@ -18,7 +18,7 @@
 #' setupProject("JenniferStarling")
 #' @export
 setUpProject <- function(folderStyle="JenniferStarling",
-                         includeProjectDescription=TRUE){
+                         includeProjectDescription=TRUE, projectDescriptionFolder=NULL){
 
   ## identify project root directory
 
@@ -128,11 +128,11 @@ setUpProject <- function(folderStyle="JenniferStarling",
 
   if(includeProjectDescription){
 
-    newProjectDescription()
+    newProjectDescription(folder=projectDescriptionFolder)
 
   }
 
   save(projectInfo,
-       file=file.path(projectRoot, "projectInfo.RData"))
+       file=file.path(projectDescriptionFolder, "projectInfo.RData"))
 
 }
