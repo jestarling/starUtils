@@ -7,18 +7,31 @@
 #' terms.
 #' This is largely a wrapper for
 #' rmarkdown::draft() with some prespecified arguments.
+#' @param folder name of the folder, in quotes, including backslash at end.
 #'
 #' @return invisible if the report subfolder and skeleton
 #'     are successfully built.
 #' @examples
 #' newProjectDescription()
+#' newProjectDescription('ProjectInfo/')
 #' @export
-newProjectDescription <- function(){
+newProjectDescription <- function(folder=NULL){
 
-  rmarkdown::draft(file = "projectDescription.Rmd",
+  rmarkdown::draft(file = paste(folder,"projectDescription.Rmd",sep=''),
                    template = "projectDescription",
                    package = "starUtils",
                    create_dir = FALSE,
                    edit = FALSE)
 
 }
+
+# ORIGINAL FUNCTION:
+# newProjectDescription <- function(){
+#    
+#    rmarkdown::draft(file = "projectDescription.Rmd",
+#                     template = "projectDescription",
+#                     package = "starUtils",
+#                     create_dir = FALSE,
+#                     edit = FALSE)
+#    
+# }
