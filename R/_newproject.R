@@ -9,12 +9,9 @@
 #' 
 #' Step 1: Create a new directory to store your project on your local machine.
 #' 
-#' 
 #' Step 2: Create a new RStudio project in your project folder.
 #' 
-#' 
 #' Step 3: Copy this _newproject.R file into the project folder.
-#' 
 #' 
 #' Step 4: Open the _newproject.R file and execute.
 
@@ -31,5 +28,5 @@ find_root(is_rstudio_project)
 # Create project directories.
 setUpProject(folderStyle="JenniferStarling",projectDescriptionFolder='ProjectInfo/')
 
-# Verify it worked.
+# Preview contents of project directory.
 dir()
