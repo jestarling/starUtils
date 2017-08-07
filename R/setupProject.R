@@ -55,7 +55,6 @@ setUpProject <- function(folderStyle="JenniferStarling",
                        'R','R/Cache','R/Output','R/Figs','R/Reports',
                        'Paper','Paper/Inputs','Paper/Proofs','Paper/Final',
                        'Paper/Reviews','Paper/Proofs','Paper/Submitted',
-                       'Paper/Inputs/Output','Paper/Inputs/Figs','Paper/Inputs/Reports',
                        'Reference','Notes','ProjectInfo')
      
      projectInfo$folderStyle <- folderStyle
