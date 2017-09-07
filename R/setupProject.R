@@ -52,7 +52,7 @@ setUpProject <- function(folderStyle="JenniferStarling",
        "results", "prose", "rmd", "web")
      
      foldersToAdd <- c('Data','DataRaw','FromCollaborator',
-                       'R','R/Cache','R/Output','R/Figs','R/Reports',
+                       'R','R/Cache','R/Output','R/Figs','R/Reports','R/Tables',
                        'Paper','Paper/Inputs','Paper/Proofs','Paper/Final',
                        'Paper/Reviews','Paper/Proofs','Paper/Submitted',
                        'Reference','Notes','ProjectInfo')

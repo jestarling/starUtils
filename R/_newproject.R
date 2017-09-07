@@ -30,3 +30,7 @@ setUpProject(folderStyle="JenniferStarling",projectDescriptionFolder='ProjectInf
 
 # Preview contents of project directory.
 dir()
+
+# Add .gitkeep files to all directories so git does not drop empty directories.
+x = sprintf('find . -type d -empty -not -path "./.git/*" -exec touch {}/.gitkeep \\;')
+system(x)
