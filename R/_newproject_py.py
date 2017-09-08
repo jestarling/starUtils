@@ -34,5 +34,11 @@ for i in range(0,len(newFolders)):
 x = 'find . -type d -empty -not -path "./.git/*" -exec touch {}/.gitkeep \;'
 os.system(x)
 
+# Copy the _new_py_script.py file to the Py/ folder.
+from shutil import copyfile
+src = '/Users/jennstarling/Stats/Projects/starUtils/R/_py_new_script.py'
+dst = os.path.join(myPath,'Py/_py_new_script.py')
+copyfile(src, dst)
+
 
 
