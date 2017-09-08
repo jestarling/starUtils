@@ -18,7 +18,7 @@
 #' setupProject("JenniferStarling")
 #' @export
 setUpProject <- function(folderStyle="JenniferStarling",
-                         includeProjectDescription=TRUE, projectDescriptionFolder=NULL){
+                         includeProjectDescription=TRUE, projectDescriptionFolder=NULL, python=FALSE){
 
   ## identify project root directory
 
@@ -51,18 +51,37 @@ setUpProject <- function(folderStyle="JenniferStarling",
      c("fromCollaborator", "data", "code", "figs",
        "results", "prose", "rmd", "web")
      
-     foldersToAdd <- c('Data','DataRaw','FromCollaborator',
+     if(python==FALSE){
+         foldersToAdd <- c('Data','DataRaw','FromCollaborator',
                        'R','R/Cache','R/Output','R/Figs','R/Reports','R/Tables',
                        'Paper','Paper/Inputs','Paper/Proofs','Paper/Final',
                        'Paper/Reviews','Paper/Proofs','Paper/Submitted',
                        'Reference','Notes','ProjectInfo')
      
-     projectInfo$folderStyle <- folderStyle
-     projectInfo$figureFolder <- "R/Figs"
-     projectInfo$reportsFolder <- "R/Reports"
-     projectInfo$rawDataFolder <- "DataRaw"
-     projectInfo$processedDataFolder <- "Data"
-     projectInfo$outputFolder <- "R/Output"
+         projectInfo$folderStyle <- folderStyle
+         projectInfo$figureFolder <- "R/Figs"
+         projectInfo$reportsFolder <- "R/Reports"
+         projectInfo$rawDataFolder <- "DataRaw"
+         projectInfo$processedDataFolder <- "Data"
+         projectInfo$outputFolder <- "R/Output"
+     }
+     if(python==TRUE){
+        
+        foldersToAdd <- c('Data','DataRaw','FromCollaborator',
+                          'Py','Py/Cache','Py/Output','Py/Figs','Py/Reports','Py/Tables',
+                          'Paper','Paper/Inputs','Paper/Proofs','Paper/Final',
+                          'Paper/Reviews','Paper/Proofs','Paper/Submitted',
+                          'Reference','Notes','ProjectInfo')
+        projectInfo$folderStyle <- folderStyle
+        projectInfo$figureFolder <- "Py/Figs"
+        projectInfo$reportsFolder <- "Py/Reports"
+        projectInfo$rawDataFolder <- "DataRaw"
+        projectInfo$processedDataFolder <- "Data"
+        projectInfo$outputFolder <- "Py/Output"
+        
+        }
+     
+ 
      
   }
   
